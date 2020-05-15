@@ -1,0 +1,99 @@
+body {
+  font-family: "Jura", sans-serif;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+.headerText {
+  animation: type 1.5s steps(12, end), blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+  /* margin: 0 auto; */
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 11ch;
+}
+
+@media screen and (min-width: 601px) {
+  .headerText {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo-container {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 601px) {
+  #logo-container {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headerText {
+    font-size: 10vw;
+  }
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 12ch;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
